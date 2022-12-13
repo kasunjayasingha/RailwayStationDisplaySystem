@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95BC9DA0-A9A7-4832-A0CA-8374D191C57F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Railway_Station_new</RootNamespace>
+    <AssemblyName>Railway Station new</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Background.Designer.cs">
+      <DependentUpon>Background.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayFri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayFri.Designer.cs">
+      <DependentUpon>DisplayFri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayMon.Designer.cs">
+      <DependentUpon>DisplayMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySampleFri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySampleFri.Designer.cs">
+      <DependentUpon>DisplaySampleFri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySampleMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySampleMon.Designer.cs">
+      <DependentUpon>DisplaySampleMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySampleSat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySampleSat.Designer.cs">
+      <DependentUpon>DisplaySampleSat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySampleSun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySampleSun.Designer.cs">
+      <DependentUpon>DisplaySampleSun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySampleThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySampleThu.Designer.cs">
+      <DependentUpon>DisplaySampleThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySampleTue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySampleTue.Designer.cs">
+      <DependentUpon>DisplaySampleTue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySampleWed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySampleWed.Designer.cs">
+      <DependentUpon>DisplaySampleWed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySat.Designer.cs">
+      <DependentUpon>DisplaySat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplaySun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplaySun.Designer.cs">
+      <DependentUpon>DisplaySun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayThu.Designer.cs">
+      <DependentUpon>DisplayThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayTue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayTue.Designer.cs">
+      <DependentUpon>DisplayTue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayWed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayWed.Designer.cs">
+      <DependentUpon>DisplayWed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infomonday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infomonday.Designer.cs">
+      <DependentUpon>Infomonday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infofriday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infofriday.Designer.cs">
+      <DependentUpon>Infofriday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infosaturday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infosaturday.Designer.cs">
+      <DependentUpon>Infosaturday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infosunday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infosunday.Designer.cs">
+      <DependentUpon>Infosunday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infothursday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infothursday.Designer.cs">
+      <DependentUpon>Infothursday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infotuesday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infotuesday.Designer.cs">
+      <DependentUpon>Infotuesday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Infowednesday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infowednesday.Designer.cs">
+      <DependentUpon>Infowednesday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loginbackg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loginbackg.Designer.cs">
+      <DependentUpon>Loginbackg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logout.Designer.cs">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Records.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Records.Designer.cs">
+      <DependentUpon>Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reg.Designer.cs">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Background.resx">
+      <DependentUpon>Background.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayFri.resx">
+      <DependentUpon>DisplayFri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayMon.resx">
+      <DependentUpon>DisplayMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySampleFri.resx">
+      <DependentUpon>DisplaySampleFri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySampleMon.resx">
+      <DependentUpon>DisplaySampleMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySampleSat.resx">
+      <DependentUpon>DisplaySampleSat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySampleSun.resx">
+      <DependentUpon>DisplaySampleSun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySampleThu.resx">
+      <DependentUpon>DisplaySampleThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySampleTue.resx">
+      <DependentUpon>DisplaySampleTue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySampleWed.resx">
+      <DependentUpon>DisplaySampleWed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySat.resx">
+      <DependentUpon>DisplaySat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplaySun.resx">
+      <DependentUpon>DisplaySun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayThu.resx">
+      <DependentUpon>DisplayThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayTue.resx">
+      <DependentUpon>DisplayTue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayWed.resx">
+      <DependentUpon>DisplayWed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infomonday.resx">
+      <DependentUpon>Infomonday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infofriday.resx">
+      <DependentUpon>Infofriday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infosaturday.resx">
+      <DependentUpon>Infosaturday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infosunday.resx">
+      <DependentUpon>Infosunday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infothursday.resx">
+      <DependentUpon>Infothursday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infotuesday.resx">
+      <DependentUpon>Infotuesday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infowednesday.resx">
+      <DependentUpon>Infowednesday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loginbackg.resx">
+      <DependentUpon>Loginbackg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logout.resx">
+      <DependentUpon>Logout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Records.resx">
+      <DependentUpon>Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reg.resx">
+      <DependentUpon>Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AWT-Train.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Contols_-_Add_On-29-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_o0d5op0wIK1v40b02o1_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Train_crossing_bridge_sri_lanka_s.jpg" />
+    <None Include="Resources\LOgin.png" />
+    <None Include="Resources\bfg.png" />
+    <None Include="Resources\bfg1.png" />
+    <None Include="Resources\aa.png" />
+    <None Include="Resources\bnb.png" />
+    <Content Include="Train Details.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Train Details_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Train Details.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
